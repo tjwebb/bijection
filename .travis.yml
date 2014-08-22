@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '0.10'
+  - '0.11'
+
+deploy:
+  provider: npm
+  email: me@traviswebb.com
+  api_key:
+    secure: MyB89HQd8Ox/svyqBqw0g0gsjlIIKoXsnAmIHrgY4EezbSqo9pRt6Ap7wXvWj6B9EwCgL3rBwTqgF5ESAZxr6uevILefCCnKw7JY5YcU3b7i7VDxu1ph6864n3OLnn028Tq5OFeDqpGKwMak22FMZQUfDutU71c2xGScc0sQE1M=
+  on:
+    tags: true
+    repo: tjwebb/bijection
+    all_branches: true
