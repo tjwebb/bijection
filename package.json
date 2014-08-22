@@ -1,0 +1,37 @@
+{
+  "name": "bijection",
+  "version": "0.0.0",
+  "description": "Node.js utility for mapping the properties of two Objects between each other",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tjwebb/bijection.git"
+  },
+  "keywords": [
+    "orm",
+    "schema",
+    "mapping",
+    "transform",
+    "morph",
+    "congruence",
+    "lodash",
+    "underscore",
+    "bijection",
+    "bijective"
+  ],
+  "author": "Travis Webb <me@traviswebb.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjwebb/bijection/issues"
+  },
+  "homepage": "https://github.com/tjwebb/bijection",
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
+}
