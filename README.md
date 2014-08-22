@@ -1,9 +1,12 @@
-pg-json-data-export
+bijection
 =====================
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
+
+Node.js utility for mapping the properties of two Objects between each other
+
 
 ## Install
 ```sh
@@ -11,6 +14,21 @@ $ npm install bijection --save
 ``
 
 ## Usage
+```js
+var Bijection = require('bijection');
+var LegacyAccount = {
+  accnt_id: 'integer',
+  accnt_name: 'string'
+};
+var Account = {
+  id: 'integer',
+  name: 'string',
+};
+var AccountMapping = new Bijection(Account, LegacyAccount, {
+  id: 'accnt_id',
+  name: 'accnt_name'
+});
+
 
 ## License
 MIT
