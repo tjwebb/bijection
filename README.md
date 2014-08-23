@@ -5,7 +5,7 @@ bijection
 [![Build status][travis-image]][travis-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 
-Map an input Object `x` onto an output Object `y` via a bijective function `f`, i.e. `f: X -> Y`
+Map an input Object `x` to an output Object `y` via a bijective function `f`, i.e. `f: X -> Y`
 
 ## Install
 ```sh
@@ -58,7 +58,7 @@ Create a new bijection between two domains
 `f.mapping` | Declarative object that indicates the mapping from `X -> Y`
 
 #### `.map(x)`
-Map an input Object `x` onto an output Object `x` via a bijection `f`, i.e. `f: X -> Y`
+Map an input Object `x` to an output Object `y` via a bijective function `f`, i.e. `f: X -> Y`
 
 | @param | description
 |:--|:--|
