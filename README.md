@@ -5,7 +5,7 @@ bijection
 [![Build status][travis-image]][travis-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 
-Node.js utility for mapping the properties of two Objects between each other
+Node.js utility for mapping the properties of an Object to another.
 
 ## Install
 ```sh
@@ -16,18 +16,45 @@ $ npm install bijection --save
 ```js
 var Bijection = require('bijection');
 var LegacyAccount = {
-  accnt_id: 'integer',
-  accnt_name: 'string'
+  identity: 'crmacct',
+  attributes: {
+    crmacct_id: 'integer',
+    crmacct_name: 'string'
+  }
 };
 var Account = {
-  id: 'integer',
-  name: 'string',
+  identity: 'Account',
+  attributes: {
+    id: 'integer',
+    sobriquet: 'string',
+  }
 };
-var AccountMapping = new Bijection(Account, LegacyAccount, {
-  id: 'accnt_id',
-  name: 'accnt_name'
+var AccountBijection = new Bijection({
+  domain: Account,
+  codomain: [ LegacyAccount ],
+  mapping: {
+    id: 'crmacct_id',
+    sobriquet: 'crmacct_name'
+  }
 });
+var tjwebbLegacyAccount = AccountBijection.map({ id: 1, sobriquet: 'tjwebb' });
+/**
+  tjwebbLegacyAccount = {
+    crmacct_id: 1,
+    crmacct_name: 'tjwebb'
+  };
+*/
 ```
+
+## API
+
+#### `.map`
+
+#### `.bijective`
+
+#### `.injective`
+
+#### `.surjective`
 
 ## License
 MIT
