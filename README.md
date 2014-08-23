@@ -7,11 +7,10 @@ bijection
 
 Node.js utility for mapping the properties of two Objects between each other
 
-
 ## Install
 ```sh
 $ npm install bijection --save
-``
+```
 
 ## Usage
 ```js
