@@ -28,7 +28,7 @@ var AccountMapping = new Bijection(Account, LegacyAccount, {
   id: 'accnt_id',
   name: 'accnt_name'
 });
-
+```
 
 ## License
 MIT
