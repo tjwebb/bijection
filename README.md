@@ -53,7 +53,7 @@ Create a new bijection between two domains
 
 | @param | description
 |:--|:--|
-`f.domain` | The input domain
+| `f.domain` | The input domain
 `f.codomain` | The output domain
 `f.mapping` | Declarative object that indicates the mapping from `X -> Y`
 
