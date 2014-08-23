@@ -5,7 +5,7 @@ bijection
 [![Build status][travis-image]][travis-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 
-Node.js utility for mapping the properties of an Object to another.
+Map an input Object `x` onto an output Object `y` via a bijective function `f`, i.e. `f: X -> Y`
 
 ## Install
 ```sh
