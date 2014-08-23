@@ -29,7 +29,8 @@
   },
   "homepage": "https://github.com/tjwebb/bijection",
   "devDependencies": {
-    "mocha": "^1.21.4"
+    "mocha": "^1.21.4",
+    "xtuple-api": "*"
   },
   "dependencies": {
     "congruence": "^1.5.4",
