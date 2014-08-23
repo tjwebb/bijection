@@ -1,6 +1,6 @@
 {
   "name": "bijection",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node.js utility for mapping the properties of two Objects between each other",
   "main": "index.js",
   "scripts": {
