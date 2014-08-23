@@ -54,17 +54,17 @@ Create a new bijection between two domains
 | @param | description
 |:--|:--|
 | `f.domain` | The input domain
-`f.codomain` | The output domain
-`f.mapping` | Declarative object that indicates the mapping from `X -> Y`
+| `f.codomain` | The output domain
+| `f.mapping` | Declarative object that indicates the mapping from `X -> Y`
 
 #### `.map(x)`
 Map an input Object `x` to an output Object `y` via a bijective function `f`, i.e. `f: X -> Y`
 
 | @param | description
 |:--|:--|
-`x` | The input object to map onto codomain `Y`
-**@return** | **description**
-`y` | A particular image of codomain `Y` resulting from mapping an input `x` onto it
+| `x` | The input object to map onto codomain `Y`
+| **@return** | **description**
+| `y` | A particular image of codomain `Y` resulting from mapping an input `x` onto it
 
 ## License
 MIT
