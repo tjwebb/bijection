@@ -49,6 +49,7 @@ var tjwebbLegacyAccount = AccountBijection.map({ id: 1, sobriquet: 'tjwebb' });
 ## API
 
 #### `new Bijection(f)`
+Create a new bijection between two domains
 
 | @param | description
 |:--|:--|
@@ -57,7 +58,6 @@ var tjwebbLegacyAccount = AccountBijection.map({ id: 1, sobriquet: 'tjwebb' });
 `f.mapping` | Declarative object that indicates the mapping from `X -> Y`
 
 #### `.map(x)`
-
 Map an input Object `x` onto an output Object `x` via a bijection `f`, i.e. `f: X -> Y`
 
 | @param | description
