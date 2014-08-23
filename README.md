@@ -39,22 +39,29 @@ var AccountBijection = new Bijection({
 });
 var tjwebbLegacyAccount = AccountBijection.map({ id: 1, sobriquet: 'tjwebb' });
 /**
-  tjwebbLegacyAccount = {
-    crmacct_id: 1,
-    crmacct_name: 'tjwebb'
-  };
-*/
+ * tjwebbLegacyAccount = {
+ *   crmacct_id: 1,
+ *   crmacct_name: 'tjwebb'
+ * };
+ */
 ```
 
 ## API
 
-#### `.map`
+#### `new Bijection(f)`
+| @param | description
+|:--|:--|
+f.domain | The input domain
+f.codomain | The output domain
+f.mapping | Declarative object that indicates the mapping from `X -> Y`
 
-#### `.bijective`
-
-#### `.injective`
-
-#### `.surjective`
+#### `.map(x)`
+Map an input Object `x` onto an output Object `x` via a bijection `f`, i.e. `f: X -> Y`
+| @param | description
+|:--|:--|
+| `x` | The input object to map onto codomain `Y`
+| **@return** | **description**
+| `y` | A particular image of codomain `Y` resulting from mapping an input `x` onto it
 
 ## License
 MIT

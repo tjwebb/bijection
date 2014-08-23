@@ -32,6 +32,7 @@
     "mocha": "^1.21.4"
   },
   "dependencies": {
+    "congruence": "^1.5.4",
     "lodash": "^2.4.1"
   }
 }
