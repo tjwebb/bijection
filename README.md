@@ -69,9 +69,9 @@ Map an input Object `x` to an output Object `y` via a bijective function `f`, i.
 ## License
 MIT
 
-[npm-image]: https://img.shields.io/npm/v/bijection.svg?style=flat
+[npm-image]: https://img.shields.io/npm/v/bijection.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/bijection
-[travis-image]: https://img.shields.io/travis/tjwebb/bijection.svg?style=flat
+[travis-image]: https://img.shields.io/travis/tjwebb/bijection.svg?style=flat-square
 [travis-url]: https://travis-ci.org/tjwebb/bijection
-[daviddm-image]: http://img.shields.io/david/tjwebb/bijection.svg?style=flat
+[daviddm-image]: http://img.shields.io/david/tjwebb/bijection.svg?style=flat-square
 [daviddm-url]: https://david-dm.org/tjwebb/bijection
