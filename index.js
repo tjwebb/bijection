@@ -2,8 +2,8 @@ var _ = require('lodash');
 _.mixin(require('congruence'));
 
 /**
- * Map an input Object `x` to an output Object `y` via a bijective function `f`
- * i.e. `f: X -> Y`
+ * Image an Object `x` projected onto an output Object `y` via a bijective
+ * function `f`, i.e. `f: X -> Y`
  *
  * @private
  */
@@ -26,18 +26,26 @@ function Bijection (bxn) {
 }
 
 Bijection.template = {
-  domain: _.isObject,
+  domain: _.congruent({
+    identity: _.isString,
+    attributes: _.isObject
+  }),
   codomain: _.isArray,
   mapping: _.isObject
 };
 
+Bijection.mappingTemplate = {
+  identity: _.isString,
+  attributes: _.isObject
+};
+
 /**
- * Map input object to each of the codomain subsets specified in the
+ * Project input object onto each of the codomain subsets specified in the
  * bijection template.
  *
  * @public
  */
-Bijection.prototype.map = function map (object) {
+Bijection.prototype.project = function map (object) {
   return _.mapValues(this.bxn.mapping, function (mapping, name) {
     return image(object, mapping);
   });

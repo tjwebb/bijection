@@ -14,11 +14,15 @@
     "orm",
     "schema",
     "mapping",
+    "json",
     "transform",
+    "translate",
+    "mapObject",
+    "waterline",
+    "sails",
     "morph",
     "congruence",
     "lodash",
-    "underscore",
     "bijection",
     "bijective"
   ],
@@ -29,11 +33,10 @@
   },
   "homepage": "https://github.com/tjwebb/bijection",
   "devDependencies": {
-    "mocha": "^1.21.4",
-    "xtuple-api": "*"
+    "mocha": "^2.1",
   },
   "dependencies": {
     "congruence": "^1.6",
-    "lodash": "^3.3"
+    "lodash": "^3.4"
   }
 }

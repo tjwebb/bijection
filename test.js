@@ -3,9 +3,16 @@ _.mixin(require('congruence'));
 var assert = require('assert');
 var Bijection = require('./');
 var domain = {
-  Account: require('xtuple-api/api/models/Account'),
-  Contact: require('xtuple-api/api/models/Contact'),
-  Address: require('xtuple-api/api/models/Address')
+  Account: {
+    identity: 'account',
+    attributes: {
+      id: 'integer',
+      number: 'string',
+      name: 'string',
+      active: 'boolean',
+      type: 'string'
+    }
+  }
 };
 var codomain = {
   crmacct: {
@@ -51,15 +58,14 @@ describe('bijection', function () {
     it('should store bijection object as .bxn property', function () {
       assert(_.isObject(xm.bijections.Account.bxn));
     });
-    it('should expose .map() function', function () {
-      assert(_.isFunction(xm.bijections.Account.map));
+    it('should expose .project() function', function () {
+      assert(_.isFunction(xm.bijections.Account.project));
     });
   });
 
-  describe('#map', function () {
-
+  describe('#project', function () {
     it('should return an image of the domain Y', function () {
-      var image = xm.bijections.Account.map({
+      var image = xm.bijections.Account.project({
         id: 1,
         number: '1000',
         name: 'tjwebb',
@@ -73,7 +79,7 @@ describe('bijection', function () {
         crmacct_name: 'tjwebb',
         crmacct_active: true,
         crmacct_type: 'I'
-      }));
+      }, image.crmacct));
     });
 
   });
